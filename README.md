@@ -68,8 +68,8 @@ text
 ATTENDANCE REPORT
 ==================================================
 pushpak: 47.5 minutes - ✅ PRESENT
-John Doe: 12.3 minutes - ❌ ABSENT
-Jane Smith: 45.0 minutes - ✅ PRESENT
+rahul: 12.3 minutes - ❌ ABSENT
+atharva: 45.0 minutes - ✅ PRESENT
 ==================================================
 📁 Detailed report saved to 'attendance_report.csv'
 CSV File:
