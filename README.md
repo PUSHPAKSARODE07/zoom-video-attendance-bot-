@@ -165,3 +165,29 @@ No external APIs beyond Zoom's SDK
 Attendance reports are saved locally as CSV files
 
 No video/audio recording – only camera on/off events
+
+📝 Important Note: Why SDK Files Are Not Included in This Repository
+🔴 Large Files Excluded from GitHub
+This repository contains only the source code (bot.py, Dockerfile, docker-compose.yml, etc.) for the Zoom Attendance Tracker Bot. The Zoom Meeting SDK binary files are NOT included in this repository for the following important reasons:
+
+📦 1. GitHub File Size Limits
+File	Size	GitHub Limit	Status
+libmeetingsdk.so	195 MB	100 MB max	❌ Exceeds limit
+Other SDK files	~50 MB total	100 MB max	⚠️ Too large
+GitHub has a strict 100 MB file size limit for individual files . The main SDK library is almost 200 MB, making it impossible to host directly on GitHub.
+
+🚀 2. Git LFS Limitations
+While GitHub offers Git Large File Storage (LFS) for files up to 2 GB, there are significant drawbacks:
+
+Factor	Limitation
+Free Tier	Only 1 GB total storage
+Bandwidth	1 GB monthly free bandwidth
+Cost	Paid plans start at $5/month for 50 GB
+Speed	Very slow uploads (as you experienced: 21 KB/s)
+For a project of this size, using Git LFS would:
+
+Quickly exceed free storage limits
+
+Make cloning slow for users
+
+Incur costs for continued hosting
