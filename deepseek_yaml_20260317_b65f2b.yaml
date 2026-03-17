@@ -1,0 +1,11 @@
+services:
+  bot:
+    image: zoom-attendance-bot
+    build: .
+    container_name: zoom-attendance-bot
+    volumes:
+      - ./bot.py:/app/bot.py
+      - ./attendance_report.csv:/app/attendance_report.csv
+    command: python bot.py
+    stdin_open: true
+    tty: true
