@@ -1,0 +1,23 @@
+# SDK binaries
+*.so
+*.dll
+*.dylib
+*.whl
+*.tar.gz
+*.zip
+zoomsdk/
+sdk/
+libmeetingsdk.so
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data
+*.csv
+attendance_report.csv
+
+# Docker
+.dockerignore
